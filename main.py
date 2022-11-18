@@ -29,7 +29,7 @@ bot = DuelPluginInstance(
     name='决斗游戏',
     version='1.0',
     plugin_id='amiyabot-game-hsyhhssyy-duel',
-    plugin_type='official',
+    plugin_type='',
     description='让兔兔可以公平的裁判一场决斗',
     document=f'{curr_dir}/README.md'
 )

@@ -27,7 +27,7 @@ class DuelPluginInstance(PluginInstance):
 
 bot = DuelPluginInstance(
     name='决斗游戏',
-    version='1.0',
+    version='1.1',
     plugin_id='amiyabot-game-hsyhhssyy-duel',
     plugin_type='',
     description='让兔兔可以公平的裁判一场决斗',

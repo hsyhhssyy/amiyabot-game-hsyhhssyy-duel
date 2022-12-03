@@ -27,7 +27,7 @@ class DuelPluginInstance(PluginInstance):
 
 bot = DuelPluginInstance(
     name='决斗游戏',
-    version='1.1',
+    version='1.2',
     plugin_id='amiyabot-game-hsyhhssyy-duel',
     plugin_type='',
     description='让兔兔可以公平的裁判一场决斗',
@@ -78,7 +78,7 @@ async def _(data: Message):
             return Chain(data,at=False).text('对方30秒内未响应同意')
     
     if not agree:
-        return Chain(choice,at=False).text('对方30秒内未响应同意')
+        return Chain(data,at=False).text('对方30秒内未响应同意')
 
     await data.send( Chain(data,at=False).at(duel_starter).at(duel_victim).text('接下来，阿米娅会在60秒内喊出开始，在这之后最先发送“开枪”的博士胜出，在喊开始之前发送的博士会被视为犯规，输的人会被禁言哦。') )
 
